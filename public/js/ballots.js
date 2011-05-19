@@ -83,5 +83,7 @@
     alert("Could not find your location, defaulting to Seattle");
     return load_map(SEATTLE_LAT, SEATTLE_LONG);
   };
-  navigator.geolocation.getCurrentPosition(location_success, location_fail);
+  navigator.geolocation.getCurrentPosition(location_success, location_fail, {
+    enableHighAccuracy: true
+  });
 }).call(this);

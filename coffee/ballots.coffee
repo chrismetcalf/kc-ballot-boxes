@@ -92,6 +92,4 @@ location_fail = (p) ->
   load_map(SEATTLE_LAT, SEATTLE_LONG)
 
 # Get browser location to kick the whole thing off
-navigator.geolocation.getCurrentPosition(location_success, location_fail)
-
-
+navigator.geolocation.getCurrentPosition(location_success, location_fail, { enableHighAccuracy: true })
