@@ -177,7 +177,7 @@ class Box
     end
 
     request = Net::HTTP::Get.new("/api/views/#{UID}/rows/#{id}.json")
-    request.add_field("X-APP-TOKEN", APP_TOKEN)
+    request.add_field("X-APP-TOKEN", ENV["SOCRATA_APP_TOKEN"])
     response = Net::HTTP.start(DOMAIN, 80){ |http| http.request(request) }
 
     if response.code != "200"
@@ -222,7 +222,7 @@ class Point
 
       # Geocode the address
       request = Net::HTTP::Get.new("/api/geocoding/#{CGI::escape(@address)}")
-      request.add_field("X-APP-TOKEN", APP_TOKEN)
+      request.add_field("X-APP-TOKEN", ENV["SOCRATA_APP_TOKEN"])
       response = Net::HTTP.start(DOMAIN, 80){ |http| http.request(request) }
       point = JSON::parse(response.body)
       if point.nil? || !point.key?("lat") || !point.key?("long")
