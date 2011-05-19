@@ -1,0 +1,26 @@
+# King County Ballot Box Locator "App" #
+
+Demo: [http://kc-ballot-boxes.heroku.com/](http://kc-ballot-boxes.heroku.com/)
+
+![King County Ballot Box Locator](https://img.skitch.com/20110519-fsygnq7gsebthe224hfhc9egyt.png)
+
+Just a simple mobile-friendly app I created for the 2011 [Open Gov West Cross-Gov Apps Contest](http://www.opengovwest.org/events/conference/opengovwest-11/1304-2/).
+
+It's a simple way to find your closest [KC Elections Ballot Drop Box](http://www.datakc.org/Elections/King-County-Elections-Ballot-Drop-Boxes/bjd8-qrep). It uses your device's GPS to find your location, then looks up the closest ballot boxes using the [Socrata Open Data API](http://dev.socrata.com). It also provides an easy way for you to text message that location to yourself using [SMSify](http://www.smsify.com).
+
+Caveats:
+
+* On the iPhone 4 Retina screen, the formatting is far too tiny. :)
+* I wish there was a better way of getting the user's cell phone without having
+  them type it
+
+## Config ##
+
+To deploy on Heroku, you'll need to deploy the "memcache" add-in, and set the
+followign config:
+
+* SMSIFY_NUMBER - Your SMSify phone number
+* SMSIFY_USERNAME - Your SMSify username
+* SMSIFY_PASSWORD - Your SMSify password
+* SOCRATA_APP_TOKEN - Your [Socrata App Token](http://dev.socrata.com/register)
+ 
