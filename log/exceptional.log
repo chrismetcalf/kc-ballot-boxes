@@ -1,0 +1,8 @@
+# Logfile created on 2011-02-25 13:47:17 -0800 by logger.rb/25413
+[INFO] (["rack.rb:15:in `initialize'"]) 2011-02-25 21:47:17 UTC - Enabling Exceptional for Rack
+[INFO] (["remote.rb:39:in `call_remote'"]) 2011-02-25 21:47:18 UTC - /api/errors?api_key=0009d408281ffa28a48400cba7b02afe17fb52ca&protocol_version=5&hash=77cc8b7d31466ff4ab8d05902b00abed - OK
+[INFO] (["remote.rb:39:in `call_remote'"]) 2011-02-25 21:49:00 UTC - /api/errors?api_key=0009d408281ffa28a48400cba7b02afe17fb52ca&protocol_version=5&hash=77cc8b7d31466ff4ab8d05902b00abed - OK
+[INFO] (["rack.rb:15:in `initialize'"]) 2011-02-25 21:49:13 UTC - Enabling Exceptional for Rack
+[INFO] (["remote.rb:39:in `call_remote'"]) 2011-02-25 21:49:13 UTC - /api/errors?api_key=0009d408281ffa28a48400cba7b02afe17fb52ca&protocol_version=5&hash=77cc8b7d31466ff4ab8d05902b00abed - OK
+[INFO] (["rack.rb:15:in `initialize'"]) 2011-02-25 21:51:21 UTC - Enabling Exceptional for Rack
+[INFO] (["remote.rb:39:in `call_remote'"]) 2011-02-25 21:51:21 UTC - /api/errors?api_key=0009d408281ffa28a48400cba7b02afe17fb52ca&protocol_version=5&hash=77cc8b7d31466ff4ab8d05902b00abed - OK

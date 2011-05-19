@@ -1,0 +1,48 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    backports (2.0.3)
+    configuration (1.2.0)
+    dalli (1.0.3)
+    heroku (1.20.1)
+      launchy (~> 0.3.2)
+      rest-client (>= 1.4.0, < 1.7.0)
+    json (1.5.1)
+    launchy (0.3.7)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
+    mime-types (1.16)
+    monkey-lib (0.5.4)
+      backports
+    rack (1.2.1)
+    rack-coffee (0.9.1)
+      rack
+    rake (0.8.7)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
+    sinatra (1.2.3)
+      rack (~> 1.1)
+      tilt (>= 1.2.2, < 2.0)
+    sinatra-advanced-routes (0.5.1)
+      monkey-lib (~> 0.5.0)
+      sinatra (~> 1.0)
+      sinatra-sugar (~> 0.5.0)
+    sinatra-reloader (0.5.0)
+      sinatra (~> 1.0)
+      sinatra-advanced-routes (~> 0.5.0)
+    sinatra-sugar (0.5.0)
+      monkey-lib (~> 0.5.0)
+      sinatra (~> 1.0)
+    tilt (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dalli (= 1.0.3)
+  heroku
+  json (= 1.5.1)
+  rack (= 1.2.1)
+  rack-coffee
+  sinatra (~> 1.0)
+  sinatra-reloader
